@@ -1,6 +1,3 @@
-const btnMenu = document.querySelector('#btn-menu');
-const menu = document.querySelector('.navbar__item:first-child');
-
 const form = document.querySelector('form');
 const formInput = document.querySelector('#form-input');
 const error = document.querySelector('.resultado-error');
@@ -10,12 +7,6 @@ const res_info = document.querySelector('#acortador__info');
 const res_copiar = document.querySelector('#acortador__copiar');
 
 let enlace;
-btnMenu.addEventListener('click', () => {
-   menu.classList.toggle('navbar__item');
-   menu.classList.toggle('navbar__item--active');
-   console.log("si")
-});
-
 form.addEventListener('submit', (e) => {
    e.preventDefault();
    const formData = new FormData(form);
